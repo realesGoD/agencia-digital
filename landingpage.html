@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agencia Digital</title>
+    <style>
+		.body {
+            background-color: #8EADD5;
+            font-family: sans-serif;
+		}
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+        }
+        .navbar h3 {
+            color: #272D38;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #272D38;
+			transition-duration: 0.4s;	
+        }
+        .navbar ul li a:hover {
+            color: #ddd;
+        }
+		.visibility {
+			display: none;
+		}
+		.section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #272D38;
+            padding: 50px;
+        }
+        .text-content {
+            width: 50%;
+        }
+        .text-content h1 {
+			font-weight: 700;
+			letter-spacing: 0em;
+			text-align: left;
+        }
+        .text-hero-section h1 {
+			font-size: 64px;
+			line-height: 64px;
+        }	
+        .text-section h1 {
+			font-size: 48px;
+			line-height: 48px;
+        }	
+        .text-content p {
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 28px;
+			letter-spacing: 0em;
+			text-align: left;
+        }
+        .text-hero-section p {
+			font-size: 18px;
+        }
+        .text-section p {
+			font-size: 16px;
+        }
+		.text-shadow {
+			text-shadow: 0px 4px 5px #00000040;
+		}
+        .text-content button {
+            padding: 10px 20px;
+            font-size: 16px;
+			weight: 600;
+            background-color: #00000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+        }
+        .text-content button:hover {
+            color: #CFDCED;
+        }
+        .image-content {
+            width: 50%;
+			text-align: end;
+        }
+        .image-content img {
+            width: 70%;
+            height: auto;
+        }
+        .image-content-reverse {
+            width: 50%;
+        }
+        .image-content-reverse img {
+            width: 70%;
+            height: auto;
+        }
+		.logos-section {
+            padding: 20px;
+            text-align: center;
+        }
+		.logos-section p {
+            color: #CFDCED
+        }
+        .logo {
+            display: inline-block;
+            margin: 0 20px;
+            vertical-align: middle;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+		.footer {
+            color: #272D38;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer p {
+			font-size: 14px;
+            text-align: center;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            max-width: 1440px;
+            margin: auto;
+        }
+        .footer-section {
+            margin: 0 20px;
+        }
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li a {
+            color: #272D38;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+			transition-duration: 0.4s;
+        }
+        .footer-section ul li a:hover {
+            text-decoration: none;
+            color: #313846;
+        }
+		@media (max-width: 768px) {
+			.navbar {
+				flex-direction: column;
+			}
+			.section {
+				flex-direction: column;
+				text-align: center;
+			}
+			.section-reverse {
+				flex-direction: column-reverse;
+				text-align: center;
+			}
+			.text-content h1 {
+				text-align: center;
+			}
+			.text-hero-section h1 {
+				font-size: 40px;
+				line-height: 40px;
+			}	
+			.text-hero-section p {
+				font-size: 16px;
+			}
+			.text-section h1 {
+				font-size: 32px;
+				line-height: 32px;
+			}	
+			.text-section p {
+				font-size: 14px;
+			}			
+			.text-content p {
+				line-height: 27.5px;
+				text-align: center;
+			}
+			.text-content button {
+				color: #CFDCED;
+				background-color: #272D38;
+				margin-bottom: 40px;
+				height: 35px
+				top: 391px
+				left: 145px
+				border-radius: 8   
+			}
+			.text-content, .image-content, .image-content-reverse {
+				width: 100%;
+			}
+			.text-shadow {
+				text-shadow: 0px 0px 0px #00000000;
+			}
+			.image-content img {
+				width: 100%;
+			}
+			.image-content-reverse img {
+				width: 100%;
+			}
+			.logos-section {
+				padding: 10px;
+			}
+			.logos-section p {
+				color: #667085;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 14px;
+				letter-spacing: 0em;
+			}
+			.logos {
+				display: flex;
+			}
+			.logo {
+				margin: 5px;
+			}
+			.logo img {
+				width: 100%;
+			}
+			.footer-container {
+				display: block;
+				text-align: center;
+			}
+			.footer-section {
+				padding-bottom: 30px;
+			}
+		}
+    </style>
+</head>
+<body class = "body">
+    <header>
+        <div class="navbar">
+			<h3>AGENCIA DIGITAL</h1>
+			<ul>
+				<li><a href="#home">Inicio</a></li>
+				<li><a href="#about">Nosotros</a></li>
+				<li><a href="#testimonials">Testimonios</a></li>
+				<li><a href="#contact">Contacto</a></li>
+			</ul>
+		</div>
+    </header>
+    
+        <div class="section">
+			<div class="text-content text-hero-section">
+				<h1 class = "text-shadow">Creación de productos, marcas y experiencias digitales</h1>
+				<p>¡La agencia digital es su herramienta de gestión de equipos en línea, así de fácil y rápida!</p>
+				<button type="button">CONTACTANOS</button>
+			</div>
+			<div class="image-content">
+				<img src="img/hero.svg" alt="Imagen de la seccion hero">
+			</div>
+		</div>
+		<div class="logos-section">
+			<p>Con la confianza de más de 4000 empresas</p>
+			<div class = "logos">
+				<div class="logo"><img src="img/spotify.svg" alt="Logo de Spotify"></div>
+				<div class="logo"><img src="img/slack.svg" alt="Logo de Slack"></div>
+				<div class="logo"><img src="img/dropbox.svg" alt="Logo de Dropbox"></div>
+				<div class="logo"><img src="img/zoom.svg" alt="Logo de Zoom"></div>
+			</div>
+		</div>
+        <div class="section section-reverse">
+			<div class="image-content-reverse">
+				<img src="img/branding.svg" alt="Imagen de la seccion branding">
+			</div>
+			<div class="text-content text-section">
+				<h1>Sistema de marca y diseño</h1>
+				<p>Comúnmente utilizado en la industria gráfica, impresa y editorial para obtener una vista previa del diseño visual y maquetas.</p>
+			</div>
+		</div>
+        <div class="section">
+			<div class="text-content text-section">
+				<h1>Desarrollo personalizado y de complementos</h1>
+				<p>Comúnmente utilizado en la industria gráfica, de impresión y editorial para obtener una vista previa del diseño visual y maquetas.</p>
+			</div>
+			<div class="image-content">
+				<img src="img/custom.svg" alt="Imagen de la seccion de custom">
+			</div>
+		</div>
+        <div class="section section-reverse">
+			<div class="image-content-reverse">
+				<img src="img/contact.svg" alt="Imagen de la seccion contcat">
+			</div>
+			<div class="text-content text-section">
+				<h1>Sé parte del próximo gran acontecimiento</h1>
+				<p>Trabajamos desde Marcas, Startups, hasta Pymes. Colaborar para lograr un mayor impacto y crecimiento.</p>
+				<button type="button">CONTACTANOS</button>
+			</div>
+		</div>
+    
+    <footer class="footer">
+		<div class="footer-container">
+			<div class="footer-section">
+				<h3>AGENCIA DIGITAL</h3>
+				<ul>
+					<p>Creación de productos, marcas y experiencias digitales</p>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Recursos</h3>
+				<ul>
+					<li><a href="#">Guias</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Historias de clientes</a></li>
+					<li><a href="#">Glosario</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Compañia</h3>
+				<ul>
+					<li><a href="#">Sobre nosotros</a></li>
+					<li><a href="#">Carreras</a></li>
+					<li><a href="#">Socios</a></li>
+					<li><a href="#">Contactanos</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Social Media</h3>
+				<ul>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
+					<li><a href="#">Twitter</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>© Todos los derechos reservados</p>
+	</footer>
+</body>
+</html>
